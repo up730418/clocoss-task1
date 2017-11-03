@@ -4,6 +4,8 @@
 
 git clone https://github.com/up730418/clocoss-task1/
 
+Follow the prompt and enter details of an account authorised to access this repo
+
 once cloned move into the folder and type: 
 
 sh task1.sh n
