@@ -1,9 +1,11 @@
 #!/bin/bash
 
-###Setup variables ###
+### Setup variables ###
 key=$(curl "http://metadata.google.internal/computeMetadata/v1/instance/attributes/key" -H "Metadata-Flavor: Google")
 
 masterIpAddress=$(curl "http://metadata.google.internal/computeMetadata/v1/instance/attributes/masterIpAddress" -H "Metadata-Flavor: Google")
+
+## End setup variables ###
 
 ### Install Dependancies ###
 
