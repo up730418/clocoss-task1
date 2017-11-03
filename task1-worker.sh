@@ -5,12 +5,6 @@ key=$(curl "http://metadata.google.internal/computeMetadata/v1/instance/attribut
 
 masterIpAddress=$(curl "http://metadata.google.internal/computeMetadata/v1/instance/attributes/masterIpAddress" -H "Metadata-Flavor: Google")
 
-instanceName=$(curl "http://metadata/computeMetadata/v1/instance/name" -H "Metadata-Flavor:Google")
-
-zoneName=$(curl "http://metadata/computeMetadata/v1/instance/zone" -H "Metadata-Flavor:Google" | cut -d/ -f4)
-
-### End Setup variables ###
-
 ### Install Dependancies ###
 
 #Intall Node
@@ -31,4 +25,4 @@ npm install
 npm run client $key $masterIpAddress:8080
 
 #Stop Instance
-gcloud compute instances stop $instanceName --zone $zoneName
+sudo poweroff
