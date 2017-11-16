@@ -12,7 +12,7 @@ once cloned move into the folder "clocoss-task1" and type:
 
 sh task1.sh n
 
-Where n is the number of machines wou wish to deploy
+Where n is the number of machines you wish to deploy
 
 # Changing compute zone
 
